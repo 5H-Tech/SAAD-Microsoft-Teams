@@ -2,7 +2,7 @@
 (object Petal
     version    	50
     _written   	"Rose 8.5.0506.2811"
-    charSet    	178)
+    charSet    	0)
 
 (object Design "Logical View"
     is_unit    	TRUE
@@ -91,7 +91,7 @@
 	    (object Class "Teacher"
 		quid       	"418F872B00EC"
 		stereotype 	"Actor")
-	    (object UseCase "Chat"
+	    (object UseCase "Chate"
 		quid       	"418F7F810301")
 	    (object UseCase "Login | Logout form the system"
 		quid       	"418F7F84004B")
@@ -262,7 +262,7 @@
 		roles      	(list role_list
 		    (object Role "$UNNAMED$25"
 			quid       	"418F86530015"
-			supplier   	"Use Case View::Chat"
+			supplier   	"Use Case View::Chate"
 			quidu      	"418F7F810301"
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$26"
@@ -333,7 +333,7 @@
 	    (object UseCaseDiagram "Main"
 		quid       	"39C9261001B7"
 		title      	"Main"
-		zoom       	80
+		zoom       	70
 		max_height 	28350
 		max_width  	21600
 		origin_x   	1133
@@ -531,7 +531,7 @@
 			    default_color 	TRUE)
 			stereotype 	(object SegLabel @9
 			    Parent_View 	@8
-			    location   	(1091, 2314)
+			    location   	(1095, 2301)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -548,8 +548,8 @@
 			    max_width  	450
 			    justify    	0
 			    label      	"<<Extends>>"
-			    pctDist    	0.542542
-			    height     	33
+			    pctDist    	0.595640
+			    height     	21
 			    orientation 	0)
 			line_color 	3342489
 			quidu      	"418F87A101E2"
@@ -557,7 +557,7 @@
 			supplier   	@4
 			vertices   	(list Points
 			    (1201, 2405)
-			    (1044, 2199))
+			    (1051, 2209))
 			line_style 	0)
 		    (object UseCaseView "Use Case View::Submit Assignment" @10
 			location   	(640, 2496)
@@ -597,7 +597,7 @@
 			    default_color 	TRUE)
 			stereotype 	(object SegLabel @12
 			    Parent_View 	@11
-			    location   	(760, 2291)
+			    location   	(790, 2323)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -614,16 +614,16 @@
 			    max_width  	450
 			    justify    	0
 			    label      	"<<Extends>>"
-			    pctDist    	0.632901
-			    height     	9
-			    orientation 	0)
+			    pctDist    	0.594080
+			    height     	35
+			    orientation 	1)
 			line_color 	3342489
 			quidu      	"418F87A40381"
 			client     	@10
 			supplier   	@4
 			vertices   	(list Points
 			    (674, 2437)
-			    (821, 2211))
+			    (820, 2213))
 			line_style 	0)
 		    (object UseCaseView "Use Case View::Manage Teams" @13
 			location   	(2896, 1168)
@@ -994,7 +994,7 @@
 			fill_color 	13434879
 			quidu      	"418F801A0022"
 			height     	118)
-		    (object UseCaseView "Use Case View::Chat" @32
+		    (object UseCaseView "Use Case View::Chate" @32
 			location   	(1760, 1840)
 			font       	(object Font
 			    size       	10
@@ -1013,7 +1013,7 @@
 			    nlines     	2
 			    max_width  	630
 			    justify    	0
-			    label      	"Chat")
+			    label      	"Chate")
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
@@ -1049,7 +1049,7 @@
 			annotation 	8
 			autoResize 	TRUE)
 		    (object AssociationViewNew "$UNNAMED$36" @34
-			location   	(1183, 2071)
+			location   	(1183, 2072)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1066,27 +1066,27 @@
 			roleview_list 	(list RoleViews
 			    (object RoleView "$UNNAMED$37" @35
 				Parent_View 	@34
-				location   	(511, 503)
+				location   	(511, 504)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"418F87CA03C8"
 				client     	@34
 				supplier   	@7
 				vertices   	(list Points
-				    (1183, 2071)
+				    (1183, 2072)
 				    (1235, 2406))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$38" @36
 				Parent_View 	@34
-				location   	(511, 503)
+				location   	(511, 504)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"418F87CA03CA"
 				client     	@34
 				supplier   	@33
 				vertices   	(list Points
-				    (1183, 2071)
-				    (1131, 1737))
+				    (1183, 2072)
+				    (1131, 1739))
 				line_style 	0)))
 		    (object ClassView "Class" "Use Case View::Student" @37
 			ShowCompartmentStereotypes 	TRUE
@@ -1118,7 +1118,7 @@
 			annotation 	8
 			autoResize 	TRUE)
 		    (object AssociationViewNew "$UNNAMED$33" @38
-			location   	(685, 2095)
+			location   	(685, 2096)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1135,27 +1135,27 @@
 			roleview_list 	(list RoleViews
 			    (object RoleView "$UNNAMED$34" @39
 				Parent_View 	@38
-				location   	(301, 527)
+				location   	(301, 528)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"418F87C703C9"
 				client     	@38
 				supplier   	@10
 				vertices   	(list Points
-				    (685, 2095)
+				    (685, 2096)
 				    (644, 2438))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$35" @40
 				Parent_View 	@38
-				location   	(301, 527)
+				location   	(301, 528)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"418F87C703CB"
 				client     	@38
 				supplier   	@37
 				vertices   	(list Points
-				    (685, 2095)
-				    (727, 1753))
+				    (685, 2096)
+				    (726, 1755))
 				line_style 	0)))
 		    (object UseCaseView "Use Case View::Manage Profile" @41
 			location   	(1728, 1520)
