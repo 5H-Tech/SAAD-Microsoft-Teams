@@ -2455,7 +2455,7 @@
 				    supplier   	@85
 				    vertices   	(list Points
 					(1110, 1764)
-					(1401, 2166))
+					(1400, 2166))
 				    line_style 	0
 				    x_offset   	FALSE)
 				(object TransView "" @87
@@ -2546,7 +2546,7 @@
 				    supplier   	@90
 				    vertices   	(list Points
 					(1415, 1421)
-					(1423, 1510))
+					(1422, 1510))
 				    line_style 	0
 				    x_offset   	FALSE)
 				(object TransView "" @92
@@ -2568,7 +2568,7 @@
 				    supplier   	@67
 				    vertices   	(list Points
 					(1446, 1529)
-					(1715, 1643))
+					(1716, 1642))
 				    line_style 	0
 				    x_offset   	FALSE)
 				(object TransView "" @94
@@ -3607,7 +3607,7 @@
 				default_color 	TRUE)
 			    label      	(object ItemLabel
 				Parent_View 	@125
-				location   	(2263, 1812)
+				location   	(2263, 1811)
 				fill_color 	13434879
 				nlines     	2
 				max_width  	274
@@ -3619,7 +3619,7 @@
 			    quidu      	"41935F6003B5"
 			    compartment 	(object Compartment
 				Parent_View 	@125
-				location   	(2263, 1877)
+				location   	(2263, 1876)
 				font       	(object Font
 				    size       	10
 				    face       	"Arial"
@@ -3634,7 +3634,7 @@
 				fill_color 	13434879
 				anchor     	2
 				nlines     	1
-				max_width  	271
+				max_width  	2
 				justify    	1
 				compartmentItems 	(list Compartment
 				    "[not available]"))
@@ -3946,8 +3946,8 @@
 			    Parent_View 	@141
 			    location   	(2656, 624)
 			    anchor_loc 	1
-			    nlines     	1
-			    max_width  	481
+			    nlines     	2
+			    max_width  	510
 			    justify    	0
 			    label      	"Microsoft  Account Server")
 			icon       	"Actor"
@@ -4020,7 +4020,7 @@
 			supplier   	@139
 			vertices   	(list Points
 			    (1201, 2405)
-			    (1051, 2209))
+			    (1052, 2211))
 			line_style 	0)
 		    (object UseCaseView "Use Case View::Submit  Assignment" @145
 			location   	(640, 2496)
@@ -4086,7 +4086,7 @@
 			supplier   	@139
 			vertices   	(list Points
 			    (674, 2437)
-			    (821, 2210))
+			    (821, 2211))
 			line_style 	0)
 		    (object UseCaseView "Use Case View::Manage Teams" @148
 			location   	(2896, 1168)
@@ -4152,7 +4152,7 @@
 			supplier   	@148
 			vertices   	(list Points
 			    (2503, 1461)
-			    (2752, 1275))
+			    (2679, 1331))
 			line_style 	0)
 		    (object DependencyView "" @151
 			font       	(object Font
@@ -4193,7 +4193,7 @@
 			supplier   	@148
 			vertices   	(list Points
 			    (2837, 1542)
-			    (2869, 1330))
+			    (2869, 1331))
 			line_style 	0)
 		    (object DependencyView "" @153
 			font       	(object Font
@@ -4234,7 +4234,7 @@
 			supplier   	@148
 			vertices   	(list Points
 			    (3137, 1477)
-			    (3021, 1330))
+			    (3022, 1331))
 			line_style 	0)
 		    (object DependencyView "" @155
 			font       	(object Font
@@ -4275,7 +4275,7 @@
 			supplier   	@148
 			vertices   	(list Points
 			    (3570, 1495)
-			    (3038, 1237))
+			    (3216, 1323))
 			line_style 	0)
 		    (object UseCaseView "Use Case View::Login | Logout" @157
 			location   	(1744, 432)
@@ -4328,7 +4328,7 @@
 				supplier   	@157
 				vertices   	(list Points
 				    (2224, 446)
-				    (1852, 433))
+				    (1852, 432))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$30" @160
 				Parent_View 	@158
@@ -4340,7 +4340,7 @@
 				supplier   	@141
 				vertices   	(list Points
 				    (2224, 446)
-				    (2597, 459))
+				    (2595, 458))
 				line_style 	0)))
 		    (object UseCaseView "Use Case View::Register" @161
 			location   	(1728, 720)
@@ -4393,7 +4393,7 @@
 				supplier   	@161
 				vertices   	(list Points
 				    (2216, 582)
-				    (1836, 687))
+				    (1836, 686))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$33" @164
 				Parent_View 	@162
@@ -4405,7 +4405,7 @@
 				supplier   	@141
 				vertices   	(list Points
 				    (2216, 582)
-				    (2597, 477))
+				    (2595, 478))
 				line_style 	0)))
 		    (object UseCaseView "Use Case View::Search for member" @165
 			location   	(1728, 1008)
@@ -4549,7 +4549,7 @@
 				supplier   	@168
 				vertices   	(list Points
 				    (1183, 2071)
-				    (1131, 1736))
+				    (1130, 1737))
 				line_style 	0)))
 		    (object ClassView "Class" "Use Case View::Student" @172
 			ShowCompartmentStereotypes 	TRUE
@@ -4618,7 +4618,7 @@
 				supplier   	@172
 				vertices   	(list Points
 				    (685, 2095)
-				    (727, 1752))
+				    (726, 1753))
 				line_style 	0)))
 		    (object UseCaseView "Use Case View::Manage Profile" @176
 			location   	(1728, 1520)
@@ -4700,7 +4700,7 @@
 				supplier   	@148
 				vertices   	(list Points
 				    (1900, 1158)
-				    (2784, 1164))
+				    (2786, 1164))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$21" @180
 				Parent_View 	@178
@@ -4740,7 +4740,7 @@
 				supplier   	@157
 				vertices   	(list Points
 				    (1292, 846)
-				    (1567, 594))
+				    (1566, 595))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$24" @183
 				Parent_View 	@181
@@ -4752,7 +4752,7 @@
 				supplier   	@177
 				vertices   	(list Points
 				    (1292, 846)
-				    (1017, 1098))
+				    (1017, 1097))
 				line_style 	0)))
 		    (object AssociationViewNew "$UNNAMED$25" @184
 			location   	(1318, 946)
@@ -4780,7 +4780,7 @@
 				supplier   	@161
 				vertices   	(list Points
 				    (1318, 946)
-				    (1620, 776))
+				    (1431, 883))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$27" @186
 				Parent_View 	@184
@@ -4820,7 +4820,7 @@
 				supplier   	@165
 				vertices   	(list Points
 				    (1317, 1080)
-				    (1617, 1025))
+				    (1407, 1062))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$36" @189
 				Parent_View 	@187
@@ -4832,7 +4832,7 @@
 				supplier   	@177
 				vertices   	(list Points
 				    (1317, 1080)
-				    (1017, 1136))
+				    (1017, 1137))
 				line_style 	0)))
 		    (object AssociationViewNew "$UNNAMED$37" @190
 			location   	(1317, 1208)
@@ -4872,7 +4872,7 @@
 				supplier   	@177
 				vertices   	(list Points
 				    (1317, 1208)
-				    (1017, 1160))
+				    (1017, 1159))
 				line_style 	0)))
 		    (object AssociationViewNew "$UNNAMED$43" @193
 			location   	(1355, 1491)
@@ -4900,7 +4900,7 @@
 				supplier   	@167
 				vertices   	(list Points
 				    (1355, 1491)
-				    (1693, 1782))
+				    (1691, 1781))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$45" @195
 				Parent_View 	@193
@@ -5020,7 +5020,7 @@
 				supplier   	@176
 				vertices   	(list Points
 				    (1317, 1321)
-				    (1617, 1465))
+				    (1617, 1464))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$60" @204
 				Parent_View 	@202
@@ -5032,7 +5032,7 @@
 				supplier   	@177
 				vertices   	(list Points
 				    (1317, 1321)
-				    (1017, 1177))
+				    (1017, 1178))
 				line_style 	0)))))))
     root_category 	(object Class_Category "Logical View"
 	quid       	"39C9260C00D5"
