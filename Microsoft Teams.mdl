@@ -2,7 +2,7 @@
 (object Petal
     version    	50
     _written   	"Rose 8.5.0506.2811"
-    charSet    	0)
+    charSet    	178)
 
 (object Design "Logical View"
     is_unit    	TRUE
@@ -64,6 +64,7 @@
 	defaultFont 	(object Font
 	    size       	10
 	    face       	"Arial"
+	    charSet    	178
 	    bold       	FALSE
 	    italics    	FALSE
 	    underline  	FALSE
@@ -100,7 +101,7 @@
 		quid       	"418F801801C9")
 	    (object UseCase "Check Calender"
 		quid       	"418F801A0022")
-	    (object UseCase "Regester"
+	    (object UseCase "Register"
 		quid       	"418F801B01D9")
 	    (object UseCase "login"
 		quid       	"418F801D00BA")
@@ -118,7 +119,7 @@
 		quid       	"418F82F3021A")
 	    (object UseCase "Leave team"
 		quid       	"418F833501F6")
-	    (object UseCase "Joine | Leave Tean"
+	    (object UseCase "Join | Leave Tean"
 		quid       	"418F83370128"
 		visible_modules 	(list dependency_list
 		    (object Dependency_Relationship
@@ -144,7 +145,7 @@
 			stereotype 	"Extends"
 			supplier   	"Use Case View::Manage Teams"
 			quidu      	"418F82F3021A")))
-	    (object UseCase "Submet Assignment"
+	    (object UseCase "Submit Assignment"
 		quid       	"418F8772038A"
 		visible_modules 	(list dependency_list
 		    (object Dependency_Relationship
@@ -189,7 +190,7 @@
 		roles      	(list role_list
 		    (object Role "$UNNAMED$7"
 			quid       	"418F86100385"
-			supplier   	"Use Case View::Regester"
+			supplier   	"Use Case View::Register"
 			quidu      	"418F801B01D9"
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$8"
@@ -213,7 +214,7 @@
 		roles      	(list role_list
 		    (object Role "$UNNAMED$13"
 			quid       	"418F8618027D"
-			supplier   	"Use Case View::Regester"
+			supplier   	"Use Case View::Register"
 			quidu      	"418F801B01D9"
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$14"
@@ -297,7 +298,7 @@
 		roles      	(list role_list
 		    (object Role "$UNNAMED$34"
 			quid       	"418F87C703C9"
-			supplier   	"Use Case View::Submet Assignment"
+			supplier   	"Use Case View::Submit Assignment"
 			quidu      	"418F8772038A"
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$35"
@@ -335,7 +336,7 @@
 		zoom       	80
 		max_height 	28350
 		max_width  	21600
-		origin_x   	1134
+		origin_x   	1133
 		origin_y   	0
 		items      	(list diagram_item_list
 		    (object UseCaseView "Use Case View::Create" @1
@@ -343,6 +344,7 @@
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
+			    charSet    	178
 			    bold       	FALSE
 			    italics    	FALSE
 			    underline  	FALSE
@@ -362,11 +364,12 @@
 			fill_color 	13434879
 			quidu      	"418F82F10299"
 			height     	118)
-		    (object UseCaseView "Use Case View::Joine | Leave Tean" @2
+		    (object UseCaseView "Use Case View::Join | Leave Tean" @2
 			location   	(2432, 1520)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
+			    charSet    	178
 			    bold       	FALSE
 			    italics    	FALSE
 			    underline  	FALSE
@@ -380,7 +383,7 @@
 			    nlines     	2
 			    max_width  	630
 			    justify    	0
-			    label      	"Joine | Leave Tean")
+			    label      	"Join | Leave Tean")
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
@@ -391,6 +394,7 @@
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
+			    charSet    	178
 			    bold       	FALSE
 			    italics    	FALSE
 			    underline  	FALSE
@@ -410,14 +414,12 @@
 			fill_color 	13434879
 			quidu      	"418F83E0029C"
 			height     	118)
-		    (object ClassView "Class" "Use Case View::Microsoft Account server" @4
-			ShowCompartmentStereotypes 	TRUE
-			IncludeAttribute 	TRUE
-			IncludeOperation 	TRUE
-			location   	(2656, 464)
+		    (object UseCaseView "Use Case View::Assignments" @4
+			location   	(928, 2048)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
+			    charSet    	178
 			    bold       	FALSE
 			    italics    	FALSE
 			    underline  	FALSE
@@ -426,31 +428,6 @@
 			    default_color 	TRUE)
 			label      	(object ItemLabel
 			    Parent_View 	@4
-			    location   	(2656, 624)
-			    anchor_loc 	1
-			    nlines     	2
-			    max_width  	534
-			    justify    	0
-			    label      	"Microsoft Account server")
-			icon       	"Actor"
-			icon_style 	"Icon"
-			line_color 	3342489
-			quidu      	"418F7FC300E4"
-			annotation 	8
-			autoResize 	TRUE)
-		    (object UseCaseView "Use Case View::Assignments" @5
-			location   	(928, 2048)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object ItemLabel
-			    Parent_View 	@5
 			    location   	(928, 2186)
 			    anchor_loc 	1
 			    nlines     	2
@@ -462,11 +439,12 @@
 			fill_color 	13434879
 			quidu      	"418F80160250"
 			height     	118)
-		    (object UseCaseView "Use Case View::Display joined temes" @6
+		    (object UseCaseView "Use Case View::Display joined temes" @5
 			location   	(3680, 1552)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
+			    charSet    	178
 			    bold       	FALSE
 			    italics    	FALSE
 			    underline  	FALSE
@@ -474,7 +452,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@6
+			    Parent_View 	@5
 			    location   	(3680, 1690)
 			    anchor_loc 	1
 			    nlines     	2
@@ -486,11 +464,41 @@
 			fill_color 	13434879
 			quidu      	"418F8692020D"
 			height     	118)
-		    (object UseCaseView "Use Case View::Submet Assignment" @7
-			location   	(640, 2496)
+		    (object ClassView "Class" "Use Case View::Microsoft Account server" @6
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(2656, 464)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
+			    charSet    	178
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@6
+			    location   	(2656, 624)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	325
+			    justify    	0
+			    label      	"Microsoft Account server")
+			icon       	"Actor"
+			icon_style 	"Icon"
+			line_color 	3342489
+			quidu      	"418F7FC300E4"
+			annotation 	8
+			autoResize 	TRUE)
+		    (object UseCaseView "Use Case View::Add Assignment" @7
+			location   	(1248, 2464)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	178
 			    bold       	FALSE
 			    italics    	FALSE
 			    underline  	FALSE
@@ -499,69 +507,6 @@
 			    default_color 	TRUE)
 			label      	(object ItemLabel
 			    Parent_View 	@7
-			    location   	(640, 2634)
-			    anchor_loc 	1
-			    nlines     	2
-			    max_width  	630
-			    justify    	0
-			    label      	"Submet Assignment")
-			icon_style 	"Icon"
-			line_color 	3342489
-			fill_color 	13434879
-			quidu      	"418F8772038A"
-			height     	118)
-		    (object DependencyView "" @8
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			stereotype 	(object SegLabel @9
-			    Parent_View 	@8
-			    location   	(760, 2291)
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    anchor     	10
-			    anchor_loc 	1
-			    nlines     	1
-			    max_width  	450
-			    justify    	0
-			    label      	"<<Extends>>"
-			    pctDist    	0.632901
-			    height     	9
-			    orientation 	0)
-			line_color 	3342489
-			quidu      	"418F87A40381"
-			client     	@7
-			supplier   	@5
-			vertices   	(list Points
-			    (674, 2437)
-			    (821, 2212))
-			line_style 	0)
-		    (object UseCaseView "Use Case View::Add Assignment" @10
-			location   	(1248, 2464)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object ItemLabel
-			    Parent_View 	@10
 			    location   	(1248, 2602)
 			    anchor_loc 	1
 			    nlines     	2
@@ -573,22 +518,24 @@
 			fill_color 	13434879
 			quidu      	"418F87750024"
 			height     	118)
-		    (object DependencyView "" @11
+		    (object DependencyView "" @8
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
+			    charSet    	178
 			    bold       	FALSE
 			    italics    	FALSE
 			    underline  	FALSE
 			    strike     	FALSE
 			    color      	0
 			    default_color 	TRUE)
-			stereotype 	(object SegLabel @12
-			    Parent_View 	@11
+			stereotype 	(object SegLabel @9
+			    Parent_View 	@8
 			    location   	(1091, 2314)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
+				charSet    	178
 				bold       	FALSE
 				italics    	FALSE
 				underline  	FALSE
@@ -606,17 +553,84 @@
 			    orientation 	0)
 			line_color 	3342489
 			quidu      	"418F87A101E2"
-			client     	@10
-			supplier   	@5
+			client     	@7
+			supplier   	@4
 			vertices   	(list Points
 			    (1201, 2405)
-			    (1045, 2200))
+			    (1044, 2199))
+			line_style 	0)
+		    (object UseCaseView "Use Case View::Submit Assignment" @10
+			location   	(640, 2496)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	178
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@10
+			    location   	(640, 2634)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	630
+			    justify    	0
+			    label      	"Submit Assignment")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"418F8772038A"
+			height     	118)
+		    (object DependencyView "" @11
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	178
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	(object SegLabel @12
+			    Parent_View 	@11
+			    location   	(760, 2291)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	178
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    anchor     	10
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	450
+			    justify    	0
+			    label      	"<<Extends>>"
+			    pctDist    	0.632901
+			    height     	9
+			    orientation 	0)
+			line_color 	3342489
+			quidu      	"418F87A40381"
+			client     	@10
+			supplier   	@4
+			vertices   	(list Points
+			    (674, 2437)
+			    (821, 2211))
 			line_style 	0)
 		    (object UseCaseView "Use Case View::Manage Teams" @13
 			location   	(2896, 1168)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
+			    charSet    	178
 			    bold       	FALSE
 			    italics    	FALSE
 			    underline  	FALSE
@@ -640,6 +654,7 @@
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
+			    charSet    	178
 			    bold       	FALSE
 			    italics    	FALSE
 			    underline  	FALSE
@@ -648,10 +663,11 @@
 			    default_color 	TRUE)
 			stereotype 	(object SegLabel @15
 			    Parent_View 	@14
-			    location   	(2640, 1363)
+			    location   	(2635, 1367)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
+				charSet    	178
 				bold       	FALSE
 				italics    	FALSE
 				underline  	FALSE
@@ -673,12 +689,13 @@
 			supplier   	@13
 			vertices   	(list Points
 			    (2503, 1461)
-			    (2760, 1269))
+			    (2750, 1277))
 			line_style 	0)
 		    (object DependencyView "" @16
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
+			    charSet    	178
 			    bold       	FALSE
 			    italics    	FALSE
 			    underline  	FALSE
@@ -691,6 +708,7 @@
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
+				charSet    	178
 				bold       	FALSE
 				italics    	FALSE
 				underline  	FALSE
@@ -712,12 +730,13 @@
 			supplier   	@13
 			vertices   	(list Points
 			    (2837, 1542)
-			    (2869, 1332))
+			    (2869, 1331))
 			line_style 	0)
 		    (object DependencyView "" @18
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
+			    charSet    	178
 			    bold       	FALSE
 			    italics    	FALSE
 			    underline  	FALSE
@@ -730,6 +749,7 @@
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
+				charSet    	178
 				bold       	FALSE
 				italics    	FALSE
 				underline  	FALSE
@@ -751,12 +771,13 @@
 			supplier   	@13
 			vertices   	(list Points
 			    (3137, 1477)
-			    (3022, 1332))
+			    (3022, 1331))
 			line_style 	0)
 		    (object DependencyView "" @20
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
+			    charSet    	178
 			    bold       	FALSE
 			    italics    	FALSE
 			    underline  	FALSE
@@ -765,10 +786,11 @@
 			    default_color 	TRUE)
 			stereotype 	(object SegLabel @21
 			    Parent_View 	@20
-			    location   	(3358, 1367)
+			    location   	(3361, 1369)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
+				charSet    	178
 				bold       	FALSE
 				italics    	FALSE
 				underline  	FALSE
@@ -786,17 +808,18 @@
 			    orientation 	1)
 			line_color 	3342489
 			quidu      	"418F86B4031C"
-			client     	@6
+			client     	@5
 			supplier   	@13
 			vertices   	(list Points
 			    (3570, 1495)
-			    (3031, 1234))
+			    (3041, 1238))
 			line_style 	0)
 		    (object UseCaseView "Use Case View::Login | Logout form the system" @22
 			location   	(1744, 432)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
+			    charSet    	178
 			    bold       	FALSE
 			    italics    	FALSE
 			    underline  	FALSE
@@ -821,6 +844,7 @@
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
+			    charSet    	178
 			    bold       	FALSE
 			    italics    	FALSE
 			    underline  	FALSE
@@ -850,16 +874,17 @@
 				line_color 	3342489
 				quidu      	"418F8615007F"
 				client     	@23
-				supplier   	@4
+				supplier   	@6
 				vertices   	(list Points
 				    (2224, 446)
 				    (2597, 459))
 				line_style 	0)))
-		    (object UseCaseView "Use Case View::Regester" @26
+		    (object UseCaseView "Use Case View::Register" @26
 			location   	(1728, 720)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
+			    charSet    	178
 			    bold       	FALSE
 			    italics    	FALSE
 			    underline  	FALSE
@@ -873,7 +898,7 @@
 			    nlines     	2
 			    max_width  	630
 			    justify    	0
-			    label      	"Regester")
+			    label      	"Register")
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
@@ -884,6 +909,7 @@
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
+			    charSet    	178
 			    bold       	FALSE
 			    italics    	FALSE
 			    underline  	FALSE
@@ -913,7 +939,7 @@
 				line_color 	3342489
 				quidu      	"418F86180280"
 				client     	@27
-				supplier   	@4
+				supplier   	@6
 				vertices   	(list Points
 				    (2216, 582)
 				    (2597, 477))
@@ -923,6 +949,7 @@
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
+			    charSet    	178
 			    bold       	FALSE
 			    italics    	FALSE
 			    underline  	FALSE
@@ -947,6 +974,7 @@
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
+			    charSet    	178
 			    bold       	FALSE
 			    italics    	FALSE
 			    underline  	FALSE
@@ -971,6 +999,7 @@
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
+			    charSet    	178
 			    bold       	FALSE
 			    italics    	FALSE
 			    underline  	FALSE
@@ -998,6 +1027,7 @@
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
+			    charSet    	178
 			    bold       	FALSE
 			    italics    	FALSE
 			    underline  	FALSE
@@ -1019,10 +1049,11 @@
 			annotation 	8
 			autoResize 	TRUE)
 		    (object AssociationViewNew "$UNNAMED$36" @34
-			location   	(1183, 2072)
+			location   	(1183, 2071)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
+			    charSet    	178
 			    bold       	FALSE
 			    italics    	FALSE
 			    underline  	FALSE
@@ -1035,27 +1066,27 @@
 			roleview_list 	(list RoleViews
 			    (object RoleView "$UNNAMED$37" @35
 				Parent_View 	@34
-				location   	(511, 504)
+				location   	(511, 503)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"418F87CA03C8"
 				client     	@34
-				supplier   	@10
+				supplier   	@7
 				vertices   	(list Points
-				    (1183, 2072)
+				    (1183, 2071)
 				    (1235, 2406))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$38" @36
 				Parent_View 	@34
-				location   	(511, 504)
+				location   	(511, 503)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"418F87CA03CA"
 				client     	@34
 				supplier   	@33
 				vertices   	(list Points
-				    (1183, 2072)
-				    (1131, 1738))
+				    (1183, 2071)
+				    (1131, 1737))
 				line_style 	0)))
 		    (object ClassView "Class" "Use Case View::Student" @37
 			ShowCompartmentStereotypes 	TRUE
@@ -1065,6 +1096,7 @@
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
+			    charSet    	178
 			    bold       	FALSE
 			    italics    	FALSE
 			    underline  	FALSE
@@ -1086,10 +1118,11 @@
 			annotation 	8
 			autoResize 	TRUE)
 		    (object AssociationViewNew "$UNNAMED$33" @38
-			location   	(685, 2096)
+			location   	(685, 2095)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
+			    charSet    	178
 			    bold       	FALSE
 			    italics    	FALSE
 			    underline  	FALSE
@@ -1102,33 +1135,34 @@
 			roleview_list 	(list RoleViews
 			    (object RoleView "$UNNAMED$34" @39
 				Parent_View 	@38
-				location   	(301, 528)
+				location   	(301, 527)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"418F87C703C9"
 				client     	@38
-				supplier   	@7
+				supplier   	@10
 				vertices   	(list Points
-				    (685, 2096)
+				    (685, 2095)
 				    (644, 2438))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$35" @40
 				Parent_View 	@38
-				location   	(301, 528)
+				location   	(301, 527)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"418F87C703CB"
 				client     	@38
 				supplier   	@37
 				vertices   	(list Points
-				    (685, 2096)
-				    (726, 1754))
+				    (685, 2095)
+				    (727, 1753))
 				line_style 	0)))
 		    (object UseCaseView "Use Case View::Manage Profile" @41
 			location   	(1728, 1520)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
+			    charSet    	178
 			    bold       	FALSE
 			    italics    	FALSE
 			    underline  	FALSE
@@ -1156,6 +1190,7 @@
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
+			    charSet    	178
 			    bold       	FALSE
 			    italics    	FALSE
 			    underline  	FALSE
@@ -1181,6 +1216,7 @@
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
+			    charSet    	178
 			    bold       	FALSE
 			    italics    	FALSE
 			    underline  	FALSE
@@ -1216,10 +1252,11 @@
 				    (1017, 1152))
 				line_style 	0)))
 		    (object AssociationViewNew "$UNNAMED$3" @46
-			location   	(1290, 847)
+			location   	(1291, 846)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
+			    charSet    	178
 			    bold       	FALSE
 			    italics    	FALSE
 			    underline  	FALSE
@@ -1232,26 +1269,26 @@
 			roleview_list 	(list RoleViews
 			    (object RoleView "$UNNAMED$4" @47
 				Parent_View 	@46
-				location   	(1082, 255)
+				location   	(1083, 254)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"418F860D02E5"
 				client     	@46
 				supplier   	@22
 				vertices   	(list Points
-				    (1290, 847)
-				    (1564, 596))
+				    (1291, 846)
+				    (1566, 595))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$5" @48
 				Parent_View 	@46
-				location   	(1082, 255)
+				location   	(1083, 254)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"418F860D02E7"
 				client     	@46
 				supplier   	@42
 				vertices   	(list Points
-				    (1290, 847)
+				    (1291, 846)
 				    (1017, 1098))
 				line_style 	0)))
 		    (object AssociationViewNew "$UNNAMED$6" @49
@@ -1259,6 +1296,7 @@
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
+			    charSet    	178
 			    bold       	FALSE
 			    italics    	FALSE
 			    underline  	FALSE
@@ -1298,6 +1336,7 @@
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
+			    charSet    	178
 			    bold       	FALSE
 			    italics    	FALSE
 			    underline  	FALSE
@@ -1337,6 +1376,7 @@
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
+			    charSet    	178
 			    bold       	FALSE
 			    italics    	FALSE
 			    underline  	FALSE
@@ -1376,6 +1416,7 @@
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
+			    charSet    	178
 			    bold       	FALSE
 			    italics    	FALSE
 			    underline  	FALSE
@@ -1415,6 +1456,7 @@
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
+			    charSet    	178
 			    bold       	FALSE
 			    italics    	FALSE
 			    underline  	FALSE
@@ -1454,6 +1496,7 @@
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
+			    charSet    	178
 			    bold       	FALSE
 			    italics    	FALSE
 			    underline  	FALSE
@@ -1493,6 +1536,7 @@
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
+			    charSet    	178
 			    bold       	FALSE
 			    italics    	FALSE
 			    underline  	FALSE
@@ -1564,6 +1608,7 @@
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
+			    charSet    	178
 			    bold       	FALSE
 			    italics    	FALSE
 			    underline  	FALSE
@@ -1588,6 +1633,7 @@
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
+			    charSet    	178
 			    bold       	FALSE
 			    italics    	FALSE
 			    underline  	FALSE
@@ -1612,6 +1658,7 @@
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
+			    charSet    	178
 			    bold       	FALSE
 			    italics    	FALSE
 			    underline  	FALSE
@@ -1645,6 +1692,7 @@
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
+			    charSet    	178
 			    bold       	FALSE
 			    italics    	FALSE
 			    underline  	FALSE
@@ -1660,6 +1708,7 @@
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
+			    charSet    	178
 			    bold       	FALSE
 			    italics    	FALSE
 			    underline  	FALSE
@@ -1675,6 +1724,7 @@
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
+			    charSet    	178
 			    bold       	FALSE
 			    italics    	FALSE
 			    underline  	FALSE
@@ -1690,6 +1740,7 @@
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
+			    charSet    	178
 			    bold       	FALSE
 			    italics    	FALSE
 			    underline  	FALSE
@@ -1705,6 +1756,7 @@
 			font       	(object Font
 			    size       	12
 			    face       	"Arial"
+			    charSet    	178
 			    bold       	TRUE
 			    italics    	FALSE
 			    underline  	FALSE
@@ -1720,6 +1772,7 @@
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
+			    charSet    	178
 			    bold       	FALSE
 			    italics    	FALSE
 			    underline  	FALSE
@@ -1735,6 +1788,7 @@
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
+			    charSet    	178
 			    bold       	FALSE
 			    italics    	FALSE
 			    underline  	FALSE
@@ -1750,6 +1804,7 @@
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
+			    charSet    	178
 			    bold       	FALSE
 			    italics    	FALSE
 			    underline  	FALSE
@@ -1765,6 +1820,7 @@
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
+			    charSet    	178
 			    bold       	FALSE
 			    italics    	FALSE
 			    underline  	FALSE
