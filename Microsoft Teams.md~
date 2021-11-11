@@ -332,36 +332,18 @@
 	statemachine 	(object State_Machine "State/Activity Model"
 	    quid       	"4192EBFC025C"
 	    states     	(list States
-		(object ActivityState "$UNNAMED$42"
-		    quid       	"618CA1830317")
-		(object Decision "$UNNAMED$43"
-		    quid       	"618CA1F60064")
-		(object ActivityState "Check login detalies"
-		    quid       	"618CA2A600C4")
-		(object State "$UNNAMED$44"
+		(object State "start state"
 		    quid       	"618CA34F0160"
 		    type       	"StartState")
-		(object Decision "$UNNAMED$45"
+		(object Decision "$UNNAMED$42"
 		    quid       	"618CA36D01EF")
-		(object ActivityState "$UNNAMED$46"
-		    quid       	"618CA3B40221")
-		(object ActivityState "check if"
-		    quid       	"618CA42803AF")
-		(object ActivityState "display recent chate menue"
-		    quid       	"618CA4480326")
-		(object Decision "$UNNAMED$47"
+		(object Decision "$UNNAMED$43"
 		    quid       	"618CA58900C9")
-		(object ActivityState "search for memeber"
-		    quid       	"618CA64C0217")
-		(object State "$UNNAMED$48"
+		(object State "End state"
 		    quid       	"618CA82202DE"
 		    type       	"EndState")
-		(object ActivityState "$UNNAMED$49"
-		    quid       	"618CA848008D")
-		(object Decision "$UNNAMED$50"
+		(object Decision "$UNNAMED$44"
 		    quid       	"618CA89E0321")
-		(object ActivityState "make a cole"
-		    quid       	"618CA8DE0233")
 		(object State "Login using microsoft Account"
 		    quid       	"4192FDB7004C"
 		    type       	"Normal")
@@ -411,122 +393,19 @@
 	    objects    	(list Objects)
 	    transitions 	(list transition_list
 		(object State_Transition
-		    quid       	"618CA27A0374"
-		    supplier   	"$UNNAMED$43"
-		    supplier_quidu 	"618CA1F60064"
-		    client     	"$UNNAMED$42"
-		    client_quidu 	"618CA1830317"
-		    sendEvent  	(object sendEvent
-			quid       	"618CA27A0377"))
-		(object State_Transition
-		    quid       	"618CA3020304"
-		    supplier   	"Use Case View::State/Activity Model::Check login detalies"
-		    supplier_quidu 	"618CA2A600C4"
-		    client     	"$UNNAMED$42"
-		    client_quidu 	"618CA1830317"
-		    sendEvent  	(object sendEvent
-			quid       	"618CA3020307"))
-		(object State_Transition
-		    quid       	"618CA36801CE"
-		    supplier   	"$UNNAMED$42"
-		    supplier_quidu 	"618CA1830317"
-		    client     	"$UNNAMED$44"
-		    client_quidu 	"618CA34F0160"
-		    sendEvent  	(object sendEvent
-			quid       	"618CA36801D1"))
-		(object State_Transition
-		    quid       	"618CA3750231"
-		    supplier   	"$UNNAMED$45"
-		    supplier_quidu 	"618CA36D01EF"
-		    client     	"Use Case View::State/Activity Model::Check login detalies"
-		    client_quidu 	"618CA2A600C4"
-		    sendEvent  	(object sendEvent
-			quid       	"618CA3750234"))
-		(object State_Transition
-		    quid       	"618CA3C400EA"
-		    label      	""
-		    supplier   	"$UNNAMED$46"
-		    supplier_quidu 	"618CA3B40221"
-		    client     	"$UNNAMED$45"
-		    client_quidu 	"618CA36D01EF"
-		    Event      	(object Event "[Error]"
-			quid       	"618CA3C400EB")
-		    sendEvent  	(object sendEvent
-			quid       	"618CA3C400ED"))
-		(object State_Transition
-		    quid       	"618CA3C901DB"
-		    supplier   	"$UNNAMED$42"
-		    supplier_quidu 	"618CA1830317"
-		    client     	"$UNNAMED$46"
-		    client_quidu 	"618CA3B40221"
-		    sendEvent  	(object sendEvent
-			quid       	"618CA3C901DE"))
-		(object State_Transition
-		    quid       	"618CA49D0028"
-		    label      	""
-		    supplier   	"Use Case View::State/Activity Model::display recent chate menue"
-		    supplier_quidu 	"618CA4480326"
-		    client     	"$UNNAMED$45"
-		    client_quidu 	"618CA36D01EF"
-		    Event      	(object Event "[OK]"
-			quid       	"618CA49D0029")
-		    sendEvent  	(object sendEvent
-			quid       	"618CA49D002B"))
-		(object State_Transition
-		    quid       	"618CA6640210"
-		    label      	""
-		    supplier   	"Use Case View::State/Activity Model::search for memeber"
-		    supplier_quidu 	"618CA64C0217"
-		    client     	"$UNNAMED$47"
-		    client_quidu 	"618CA58900C9"
-		    Event      	(object Event "Search for member"
-			quid       	"618CA6640211")
-		    sendEvent  	(object sendEvent
-			quid       	"618CA6640213"))
-		(object State_Transition
-		    quid       	"618CA8B10264"
-		    label      	""
-		    supplier   	"$UNNAMED$50"
-		    supplier_quidu 	"618CA89E0321"
-		    client     	"$UNNAMED$49"
-		    client_quidu 	"618CA848008D"
-		    Event      	(object Event "Yes"
-			quid       	"618CA8B10265")
-		    sendEvent  	(object sendEvent
-			quid       	"618CA8B10267"))
-		(object State_Transition
-		    quid       	"618CA8F00176"
-		    label      	""
-		    supplier   	"Use Case View::State/Activity Model::make a cole"
-		    supplier_quidu 	"618CA8DE0233"
-		    client     	"$UNNAMED$50"
-		    client_quidu 	"618CA89E0321"
-		    Event      	(object Event "Yes"
-			quid       	"618CA8F00177")
-		    sendEvent  	(object sendEvent
-			quid       	"618CA8F00179"))
-		(object State_Transition
 		    quid       	"4192FE38005B"
 		    supplier   	"Use Case View::State/Activity Model::Login using microsoft Account"
 		    supplier_quidu 	"4192FDB7004C"
-		    client     	"$UNNAMED$44"
+		    client     	"Use Case View::State/Activity Model::start state"
 		    client_quidu 	"618CA34F0160"
 		    sendEvent  	(object sendEvent
 			quid       	"4192FE38005E"))
-		(object State_Transition
-		    quid       	"4192FE5803C0"
-		    supplier   	"Use Case View::State/Activity Model::Check login detalies"
-		    supplier_quidu 	"618CA2A600C4"
-		    client     	"Use Case View::State/Activity Model::Login using microsoft Account"
-		    client_quidu 	"4192FDB7004C"
-		    sendEvent  	(object sendEvent
-			quid       	"4192FE5803C3"))
 		(object State_Transition
 		    quid       	"4192FE8601A0"
 		    label      	""
 		    supplier   	"Use Case View::State/Activity Model::display Error massage"
 		    supplier_quidu 	"4192FE7D00B3"
-		    client     	"$UNNAMED$45"
+		    client     	"$UNNAMED$42"
 		    client_quidu 	"618CA36D01EF"
 		    Event      	(object Event "[Error]"
 			quid       	"4192FE8601A1")
@@ -542,7 +421,7 @@
 			quid       	"4192FEAE003F"))
 		(object State_Transition
 		    quid       	"618CB2420183"
-		    supplier   	"$UNNAMED$45"
+		    supplier   	"$UNNAMED$42"
 		    supplier_quidu 	"618CA36D01EF"
 		    client     	"Use Case View::State/Activity Model::Cheack the login detiels"
 		    client_quidu 	"4192FEC7027A"
@@ -553,7 +432,7 @@
 		    label      	""
 		    supplier   	"Use Case View::State/Activity Model::Display the Recent chats"
 		    supplier_quidu 	"618CB2660063"
-		    client     	"$UNNAMED$45"
+		    client     	"$UNNAMED$42"
 		    client_quidu 	"618CA36D01EF"
 		    Event      	(object Event "[ok]"
 			quid       	"419302DB0163")
@@ -561,7 +440,7 @@
 			quid       	"419302DB0165"))
 		(object State_Transition
 		    quid       	"4193031D008A"
-		    supplier   	"$UNNAMED$47"
+		    supplier   	"$UNNAMED$43"
 		    supplier_quidu 	"618CA58900C9"
 		    client     	"Use Case View::State/Activity Model::chose form menue or serach for memeber"
 		    client_quidu 	"41930313025F"
@@ -580,7 +459,7 @@
 		    label      	""
 		    supplier   	"Use Case View::State/Activity Model::Make Caole"
 		    supplier_quidu 	"4193042302BC"
-		    client     	"$UNNAMED$50"
+		    client     	"$UNNAMED$44"
 		    client_quidu 	"618CA89E0321"
 		    Event      	(object Event "[Yes]"
 			quid       	"419304380378")
@@ -590,7 +469,7 @@
 		    quid       	"4193047A0278"
 		    supplier   	"Use Case View::State/Activity Model::search for memebe"
 		    supplier_quidu 	"4193046D039B"
-		    client     	"$UNNAMED$47"
+		    client     	"$UNNAMED$43"
 		    client_quidu 	"618CA58900C9"
 		    sendEvent  	(object sendEvent
 			quid       	"4193047A027B"))
@@ -599,7 +478,7 @@
 		    label      	""
 		    supplier   	"Use Case View::State/Activity Model::Didsplay the chat"
 		    supplier_quidu 	"419304B80081"
-		    client     	"$UNNAMED$50"
+		    client     	"$UNNAMED$44"
 		    client_quidu 	"618CA89E0321"
 		    Event      	(object Event "[No]"
 			quid       	"419304F701B4")
@@ -609,7 +488,7 @@
 		    quid       	"419305050238"
 		    supplier   	"Use Case View::State/Activity Model::Didsplay the chat"
 		    supplier_quidu 	"419304B80081"
-		    client     	"$UNNAMED$47"
+		    client     	"$UNNAMED$43"
 		    client_quidu 	"618CA58900C9"
 		    sendEvent  	(object sendEvent
 			quid       	"41930505023B"))
@@ -622,14 +501,6 @@
 		    sendEvent  	(object sendEvent
 			quid       	"419305230353"))
 		(object State_Transition
-		    quid       	"4193053102C6"
-		    supplier   	"$UNNAMED$49"
-		    supplier_quidu 	"618CA848008D"
-		    client     	"Use Case View::State/Activity Model::Didsplay the chat"
-		    client_quidu 	"419304B80081"
-		    sendEvent  	(object sendEvent
-			quid       	"4193053102C9"))
-		(object State_Transition
 		    quid       	"4193055700A4"
 		    supplier   	"Use Case View::State/Activity Model::check if make a cole"
 		    supplier_quidu 	"4193054B0068"
@@ -639,7 +510,7 @@
 			quid       	"4193055700A7"))
 		(object State_Transition
 		    quid       	"4193055E00CB"
-		    supplier   	"$UNNAMED$50"
+		    supplier   	"$UNNAMED$44"
 		    supplier_quidu 	"618CA89E0321"
 		    client     	"Use Case View::State/Activity Model::check if make a cole"
 		    client_quidu 	"4193054B0068"
@@ -647,7 +518,7 @@
 			quid       	"4193055E00CE"))
 		(object State_Transition
 		    quid       	"4193056301BE"
-		    supplier   	"$UNNAMED$48"
+		    supplier   	"Use Case View::State/Activity Model::End state"
 		    supplier_quidu 	"618CA82202DE"
 		    client     	"Use Case View::State/Activity Model::Didsplay the chat"
 		    client_quidu 	"419304B80081"
@@ -684,7 +555,7 @@
 			    line_color 	3342489
 			    quidu      	"618C9FFD02F3"
 			    width      	744)
-			(object StateView "StartState" "$UNNAMED$44" @2
+			(object StateView "StartState" "start state" @2
 			    Parent_View 	@1
 			    location   	(352, 64)
 			    font       	(object Font
@@ -703,12 +574,12 @@
 				nlines     	2
 				max_width  	600
 				justify    	1
-				label      	"")
+				label      	"start state")
 			    icon_style 	"Icon"
 			    line_color 	3342489
 			    quidu      	"618CA34F0160"
 			    autoResize 	TRUE)
-			(object DecisionView "$UNNAMED$47" @3
+			(object DecisionView "$UNNAMED$43" @3
 			    Parent_View 	@1
 			    location   	(336, 1232)
 			    icon_style 	"Icon"
@@ -840,7 +711,7 @@
 			    line_color 	3342489
 			    quidu      	"618CA0060145"
 			    width      	1126)
-			(object DecisionView "$UNNAMED$45" @11
+			(object DecisionView "$UNNAMED$42" @11
 			    Parent_View 	@10
 			    location   	(1328, 416)
 			    icon_style 	"Icon"
@@ -934,7 +805,7 @@
 			    line_color 	3342489
 			    quidu      	"618CA47702D9"
 			    width      	984)
-			(object StateView "EndState" "$UNNAMED$48" @17
+			(object StateView "EndState" "End state" @17
 			    Parent_View 	@16
 			    location   	(2752, 1232)
 			    font       	(object Font
@@ -953,12 +824,12 @@
 				nlines     	2
 				max_width  	600
 				justify    	1
-				label      	"")
+				label      	"End state")
 			    icon_style 	"Icon"
 			    line_color 	3342489
 			    quidu      	"618CA82202DE"
 			    autoResize 	TRUE)
-			(object DecisionView "$UNNAMED$50" @18
+			(object DecisionView "$UNNAMED$44" @18
 			    Parent_View 	@16
 			    location   	(2432, 2128)
 			    icon_style 	"Icon"
